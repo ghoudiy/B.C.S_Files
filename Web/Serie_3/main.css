@@ -1,0 +1,29 @@
+fieldset, legend {
+  border: solid 3px lightblue;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px gray;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+legend {
+  background-color: aqua;
+}
+.inp {
+  width: 300px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+  height: 25px;
+  margin-top: 20px;
+}

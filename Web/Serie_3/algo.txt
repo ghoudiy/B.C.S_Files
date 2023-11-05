@@ -1,0 +1,60 @@
+Algorithme PP
+Debut
+  Saisie_message(message)
+  Saisie_secret(secret)
+    ch <- coder(message, secret)
+    Ecrire(ch)
+Fin
+
+TDOG 
+  Object | T/N
+    ...
+
+Procedure Saisie_message(@message: chaine)
+Debut
+  Repeter
+    Ecrire("Donner un message pour code: "), lire(ch)
+  Jusqu'a verif(ch)
+Fin
+
+Fonction verif(ch: chaine): booleen
+Debut
+  i <- 0
+  Repeter
+    ok <- ch[i] in ['a'..'z'] 
+    i <- i + 1
+  Jusqu'a (i = long(ch)) ou (non ok)
+  retourner ok
+Fin
+
+Procedure Saisie_secret(@secret: chaine)
+Debut
+  Repeter
+    Ecrire("Donner le mot secret: "), lire(secret)
+  Jusqu'a verif2(secret)
+Fin
+
+Fonction verif2(ch: chaine): booleen
+Debut
+  i <- 0
+  Repeter
+    test <- freq(c, ch) == 1
+    i <- i + 1
+  Jusqu'a i = long(ch) ou (non test)
+  retourner test
+Fin
+
+Fonction Freq(c: caractere, ch: chaine): entier
+Debut
+  nb <- 0
+  Pour i de 0 a n - 1 faire
+    si c == ch[i] alors
+      nb <- nb + 1
+    Fin si
+  Fin Pour
+  retourner nb
+Fin
+
+7
+Y o u s s r a
+0 1 2 3 4 5 6

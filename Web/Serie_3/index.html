@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <form action="valid.html" method="POST" id="personal_details" onsubmit="return check()">
+    <fieldset>
+      <legend>Your Personal Informations</legend>
+
+      <label>Last Name: </label>
+      <input type="text" class="inp" id="lname" name="lname" placeholder="Your last name">
+      <br>
+
+      <label>First Name: </label>
+      <input type="text" class="inp" id="fname" name="fname" placeholder="Your first name">
+      <br>
+    
+      <label>Birth date: </label>
+      <input type="date" name="birth_date" id="birth_date">
+      <br>
+
+      <label>Mail: </label>
+      <input type="email" class="inp" id="mail" name="mail" placeholder="Your mail">
+      <br>
+
+      <label>Your Site: </label>
+      <input type="url" class="inp" id="site" name="site" placeholder="https://example.com">
+      <br>
+    
+      <label>Password: </label>
+      <input type="password" class="inp" id="pass" name="pass">
+      <br>
+    
+      <label>Gender: </label>
+      <input type="radio" id="male" name="gender"> Male
+      <input type="radio" id="female" name="gender"> Female
+      <br>
+
+      <label>Country: </label>
+      <select name="country" id="country" class="inp">
+        <option selected hidden disabled>Choose your country</option>
+        
+        <optgroup label="Afrique">
+            <option>Tunis</option>
+            <option>Algerie</option>
+            <option>Maroc</option>
+            <option>Mauritianie</option>
+        </optgroup>
+        
+        <optgroup label="Europe">
+          <option>Belgique</option>
+          <option>Italie</option>
+        </optgroup>
+        
+        <optgroup label="Amerique">
+          <option>Canada</option>
+          <option>Argentine</option>
+        </optgroup>
+        
+        <optgroup label="Autres">
+          <option>Europerope</option>
+          <option>Asie</option>
+          <option>Ameriques</option>
+          <option>Oceanie</option>
+        </optgroup>
+
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Courses</legend>
+        <input type="checkbox" id="html5" name="html5"> Course on HTML5 <br>
+        <input type="checkbox" id="css3" name="css3">   Course on CSS3  <br>
+        <input type="checkbox" id="js" name="js">       Course on JS    <br>
+
+        <textarea name="course" id="course" cols="30" rows="10" placeholder="describe your training needs">
+        </textarea>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Send Us Your Photo</legend>
+        <input type="file" name="image" id="image">
+        <br>
+        <input type="reset" class="button" value="Clear"> <input type="submit" class="button" value="Send">
+    </fieldset>
+  </form>
+</body>
+</html>
